@@ -1,0 +1,75 @@
+
+package imc;
+
+/**
+ *
+ * @author André
+ */
+import javax.swing.*;
+
+public class IMC {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+     //declara x do tipo inteiro
+    int x;
+    
+    //declara sx tipo string
+    String speso;
+    
+    // fax a leitura e grava em sx
+    speso = JOptionPane.showInputDialog("Digite o valor seu peso");
+    
+ String sAltura;
+    // fax a leitura e grava em sx
+    sAltura = JOptionPane.showInputDialog("Digite sua altura");
+
+ imc = (peso)/(altura*altura);
+
+
+    //Magressa Grave            
+    if (imc <=16){
+
+        JOptionPane.showMessageDialog(null, "Magressa Grave " +imc);
+    }
+    if (imc >16 && imc <=17){
+        
+        JOptionPane.showMessageDialog(null, "Magreza moderada" +imc);
+    }
+
+    //Saúdavel     
+    if (imc >=18.5 && imc <=25){
+
+        JOptionPane.showMessageDialog(null, "Saúdavel " +imc);
+    }
+    
+    //Sobrepeso
+    if (imc >=26 && imc <=30){
+
+        JOptionPane.showMessageDialog(null, "Sobrepeso " +imc);
+    }
+    
+    //Obesidade Grau I
+    if (imc >=31 && imc <=35) {
+
+        JOptionPane.showMessageDialog(null, "Obesidade Grau I " +imc);
+    }
+    //Obesidade Grau II (severa)
+        if (imc >=36 && imc <=40) {
+
+        JOptionPane.showMessageDialog(null, "Obesidade Grau II severa" +imc);
+    }
+    //Obesidade Grau III(mórbida)
+        if (imc >=41) {
+        JOptionPane.showMessageDialog(null, "Obesidade Grau III mórbida " +imc);
+    }
+}
+
+}
+    }
+    
+}
